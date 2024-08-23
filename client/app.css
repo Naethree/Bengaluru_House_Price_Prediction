@@ -1,0 +1,187 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #008080;
+}
+
+.homepage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dashboard-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFC72C;
+    color: #0a2351;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+    .dashboard-link:hover {
+        background-color: #00FFFF;
+    }
+
+
+.left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px; /* Add space between logo and title */
+}
+
+.title {
+    font-size: 36px; /* Larger title font size */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 20px; /* Larger subtitle font size */
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.homepage-image {
+    width: 400px; 
+    height: 300px;
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    margin-right: 20px; /* Add space between image and links */
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    display: block;
+    font-size: 24px; /* Larger font size for links */
+    text-decoration: none;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+    .link:hover {
+        text-decoration: underline;
+    }
+
+/* Add any additional CSS styles for your form and other elements here */
+.form {
+    background-color: #F0E68C;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+h2 {
+    font-size: 24px; /* Larger font size for form headings */
+    margin-top: 20px;
+}
+
+.area,
+.location,
+.submit,
+.result,
+.switch-field input,
+.switch-field label {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 20px; /* Larger font size for form inputs */
+}
+
+.switch-field {
+    display: flex;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+    .switch-field input {
+        position: absolute !important;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        width: 1px;
+        border: 0;
+        overflow: hidden;
+    }
+
+    .switch-field label {
+        flex: 1;
+        background-color: #e4e4e4;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 16px; /* Larger font size for switch labels */
+        line-height: 1;
+        text-align: center;
+        padding: 8px 0;
+        margin-right: -1px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+    }
+
+
+        .switch-field label:hover {
+            background-color: #dcdcdc;
+        }
+
+    .switch-field input:checked + label {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    .switch-field label:first-of-type {
+        border-radius: 5px 0 0 5px;
+    }
+
+    .switch-field label:last-of-type {
+        border-radius: 0 5px 5px 0;
+    }
+
+.submit {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .submit:hover {
+        background-color: #0056b3;
+    }
+
+.result {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    line-height: 35px;
+}
+
+
+
+body, html {
+    height: 100%;
+}
